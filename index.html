@@ -6,8 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="shortcut icon" type="image/png" href="images/favicon.png">
-  <meta property="og:title" content="Harry Potter: Die Gesamtausgabe" />
+  
+  <meta property="og:title" content='Harry Potter: Die Gesamtausgabe'>
+  <meta property="og:site_name" content='Harry Potter'>
   <meta property="og:image" content="images/books.jpeg" />
+  <meta property="og:url" content='harrypotter.nazari.io'>
+  <meta property="og:description" content='The complete Harry Potter series in German. Merry Christmas, Michael.'>
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  <link type="application/json+oembed" href="embed.json" />
 
   <title>Harry Potter</title>
 
@@ -25,6 +33,7 @@
       margin: 0;
       font-family: 'Averia Serif Libre';
       min-width: 60rem;
+      padding-bottom: 3rem;
     }
 
     header {
@@ -41,7 +50,7 @@
       background: black;
       color: white;
       display: inline;
-      padding: 0.2em 1em;
+      padding: 0.1em 1em;
     }
 
     ol {
@@ -50,11 +59,13 @@
       list-style: none;
       counter-reset: counter;
     }
+
     li {
       counter-increment: counter;
       margin-bottom: -0.5em;
       padding: 0em;
     }
+
     a {
       color: inherit;
       text-decoration: none;
