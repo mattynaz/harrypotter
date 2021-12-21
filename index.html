@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+  <meta property="og:title" content="Harry Potter: Die Gesamtausgabe" />
+  <meta property="og:image" content="images/books.jpeg" />
+
+  <title>Harry Potter</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@1,700&display=swap" rel="stylesheet">
+  <style>
+    html {
+      padding: 0;
+    }
+
+    body {
+      overflow-x: hidden;
+      height: 100vh;
+      margin: 0;
+      font-family: 'Averia Serif Libre';
+      min-width: 60rem;
+    }
+
+    header {
+      font-size: 2rem;
+      justify-content: center;
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.363)), url('images/books.jpeg');
+      background-size: cover;
+      height: 30vh;
+      padding: 5rem;
+    }
+
+    header h1 {
+      margin-top: 0;
+      background: black;
+      color: white;
+      display: inline;
+      padding: 0.2em 1em;
+    }
+
+    ol {
+      font-size: 1.3rem;
+      padding: 0em 7em;
+      list-style: none;
+      counter-reset: counter;
+    }
+    li {
+      counter-increment: counter;
+      margin-bottom: -0.5em;
+      padding: 0em;
+    }
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: 0.2s all;
+    }
+
+    a:hover {
+      background: black;
+      color: white;
+    }
+
+    li:before {
+      color: rgb(202, 202, 202);
+      position: relative;
+      font-size: 3em;
+      content: counter(counter);
+      z-index: -1;
+      left: 0.5em;
+      top: 0.15em;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Harry Potter</h1>
+  </header>
+  <ol>
+    <li><a href="books/1-Harry-Potter-und-der-Stein-der-Weisen.pdf">Harry Potter und der Stein der Weisen</a></li>
+    <li><a href="books/2-Harry-Potter-und-die-Kammer-des-Schreckens.pdf">Harry Potter und die Kammer des Schreckens</a></li>
+    <li><a href="books/3-Harry-Potter-und-der-Gefangene-von-Askaban.pdf">Harry Potter und der Gefangene von Askaban</a></li>
+    <li><a href="books/4-Harry-Potter-und-der-Feuerkelch.pdf">Harry Potter und der Feuerkelch</a></li>
+    <li><a href="books/5-Harry-Potter-und-der-Orden-des-Phoenix.pdf">Harry Potter und der Orden des Phoenix</a></li>
+    <li><a href="books/6-Harry-Potter-und-der-Halbblutprinz.pdf">Harry Potter und der Halbblutprinz</a></li>
+    <li><a href="books/7-Harry-Potter-und-die-Heiligtuemer-des-Todes.pdf">Harry Potter und die Heiligtuemer des Todes</a></li>
+  </ol>
+</body>
+</html>
+
